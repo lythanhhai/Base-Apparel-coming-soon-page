@@ -1,0 +1,206 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.work {
+  width: 64rem;
+  height: 36rem;
+  display: flex;
+  flex-direction: row;
+  margin: 1rem auto;
+}
+.work__left {
+  width: 37rem;
+  height: 36rem;
+  background-image: url(./images/bg-pattern-desktop.svg);
+  object-fit: cover;
+  position: relative;
+}
+.work__left-logo {
+  width: 7rem;
+  height: 2rem;
+  margin: 3rem 0rem 6rem 5rem;
+}
+.work__left-title {
+  color: #f96262;
+  font-size: 2rem;
+  max-width: 2rem;
+  margin: 0rem 0rem 2rem 5rem;
+}
+.work__left-title span {
+  color: black;
+}
+.work__left-content {
+  color: #ce9797;
+  font-size: 0.9rem;
+  max-width: 22rem;
+  margin: 0rem 0rem 2rem 5rem;
+}
+.work__left-form {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: 0rem 0rem 1rem 5rem;
+  transition: all 1s linear;
+}
+.work__left-form--input {
+  width: 20rem;
+  height: 2.5rem;
+  border-radius: 2rem;
+  padding-left: 1rem;
+  outline: none;
+  border: 1px solod #413a3a;
+}
+.work__left-form .error {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-45%, -50%);
+  display: none;
+}
+.work__left-form .buttonEmail {
+  width: 4.5rem;
+  height: 2.5rem;
+  position: absolute;
+  top: 50%;
+  left: 57%;
+  transform: translate(-57%, -50%);
+  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 3px 5px 1px #f96262;
+}
+.work__left-form .buttonEmail:hover {
+  box-shadow: 1px 3px 9px 1px #f96262;
+  background-image: linear-gradient(135deg, #e9b7b7, #f5a3a3);
+}
+.work__left .unvalidEmail {
+  color: #f96262;
+  font-size: 1rem;
+  margin: 0 0 0 6rem;
+  display: none;
+}
+.work__right {
+  margin-left: auto;
+}
+.work__right-image {
+  width: calc(64rem - 37rem);
+  height: 36rem;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .work {
+    width: 18rem;
+    height: 36rem;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    position: relative;
+  }
+  .work__left {
+    object-fit: cover;
+    position: relative;
+    width: 18rem;
+    height: 36rem;
+  }
+  .work__left-logo {
+    width: 7rem;
+    height: 2rem;
+    margin: 1.5rem 0rem 14rem 3rem;
+  }
+  .work__left-title {
+    color: #f96262;
+    font-size: 2rem;
+    max-width: 2rem;
+    margin: 0rem 0rem 2rem 6rem;
+    text-align: center;
+  }
+  .work__left-title span {
+    color: black;
+  }
+  .work__left-content {
+    color: #ce9797;
+    font-size: 0.9rem;
+    max-width: 22rem;
+    margin: 0rem 0.5rem 2rem 0.5rem;
+    text-align: center;
+  }
+  .work__left-form {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 0rem 0rem 0.5rem 2rem;
+    transition: all 1s linear;
+  }
+  .work__left-form--input {
+    width: 14.5rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    padding-left: 1rem;
+    outline: none;
+    border: 1px solod #413a3a;
+  }
+  .work__left-form .error {
+    position: absolute;
+    top: 50%;
+    left: 56%;
+    transform: translate(-56%, -50%);
+    display: none;
+  }
+  .work__left-form .buttonEmail {
+    width: 4.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 50%;
+    left: 87%;
+    transform: translate(-87%, -50%);
+    background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 3px 5px 1px #f96262;
+  }
+  .work__left-form .buttonEmail:hover {
+    box-shadow: 1px 3px 9px 1px #f96262;
+    background-image: linear-gradient(135deg, #e9b7b7, #f5a3a3);
+  }
+  .work__left .unvalidEmail {
+    color: #f96262;
+    font-size: 0.7rem;
+    margin: 0 0 0 3rem;
+    display: none;
+  }
+  .work__right {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+  }
+  .work__right-image {
+    width: 18rem;
+    height: 11rem;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
